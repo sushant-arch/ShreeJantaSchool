@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com.css?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="school.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School webpage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="animated infinite heartBeat">
+                    Shree Janata Namuna Sec.School
+                </h1>
+            </div>
+            <div class="menu">
+                <a href="school.html">HOme</a>
+                <a href="about.html">About</a>
+                <a href="importance.html">Importances</a>
+                <a href="contact.html" class="one">Contact Us</a>
+
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h3>
+                    Starts your journey from us...
+                </h3>
+                <h1>
+                    We Prefer You 
+                    <span class="change_content" style="color:#00b894;">
+                    </span>
+
+                </h1>
+                <p>
+                    Study smart not hard...
+                </p>
+                <a href="about.html" class="btnone">Learn more</a>
+                <a href="login.html" class="btntwo">Signup here</a>
+            </section>
+        </main>
+    </header>
+    <script>
+        const textElement = document.querySelector('.change_content');
+const texts = ["Commerce", "Education", "Electrical Engineer", "Nepali Medium", "English Medium", "Business Studies"];
+let currentIndex = 0;
+
+function changeText() {
+  textElement.textContent = texts[currentIndex];
+  currentIndex = (currentIndex + 1) % texts.length;
+}
+
+setInterval(changeText, 1000);
+    </script>
+</body>
+</html>
